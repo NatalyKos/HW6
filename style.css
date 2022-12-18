@@ -177,6 +177,9 @@ p{
 .category-kids{
     background-image: url(/img/3-for\ kids.svg);
 }
+img{
+    max-width: 100%;
+}
 .category-accessories{
     grid-row: 2;
     grid-column: 1/4;
@@ -191,4 +194,22 @@ p{
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+}
+@media(max-width: 767px){
+    h1{
+        font-size: 15px;
+    }
+    .nav{
+        display: flex;
+        gap: 300px;
+    }
+    .container{
+        width: 768px;
+        margin: auto;
+    }
+    .face{
+        display: flex;
+        gap: 10px;
+        justify-self: left;
+    }
 }
